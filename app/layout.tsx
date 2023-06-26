@@ -1,3 +1,5 @@
+import Modal from './components/Modals/Modal'
+import RegisterModal from './components/Modals/RegisterModal'
 import NavBar from './components/Navbar/NavBar'
 import './globals.css'
 
@@ -21,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={font.className}>
+        <RegisterModal/>
         <NavBar/>
         {children}
       </body>
